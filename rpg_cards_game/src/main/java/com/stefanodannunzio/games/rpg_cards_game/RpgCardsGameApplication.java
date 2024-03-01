@@ -8,6 +8,7 @@ public class RpgCardsGameApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RpgCardsGameApplication.class, args);
+		System.out.println("Hello World!");
 	}
 
 }
