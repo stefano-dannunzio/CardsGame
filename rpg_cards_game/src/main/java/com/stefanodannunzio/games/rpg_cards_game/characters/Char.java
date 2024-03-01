@@ -2,7 +2,7 @@ package com.stefanodannunzio.games.rpg_cards_game.characters;
 
 import com.stefanodannunzio.games.rpg_cards_game.utils.BirthDate;
 
-public abstract class BaseChar {
+public abstract class Char {
     // Data
     private String name;
     private String alias;
@@ -18,7 +18,7 @@ public abstract class BaseChar {
     protected int level;
 
     // Constructor
-    public BaseChar(String name, String alias, BirthDate birthDate) {
+    public Char(String name, String alias, BirthDate birthDate) {
         this.name = name;
         this.alias = alias;
         this.birthDate = birthDate;
@@ -50,6 +50,11 @@ public abstract class BaseChar {
     public int updateHealth(int damage) {
         health -= damage;
         return health;
+    }
+
+    @Override
+    public String toString() {
+        return "--- Name: " + name + ", Alias: " + alias + ", Class: " + this.getClass().getSimpleName() +  ", Birth Date: " + birthDate + ", Age: " + age + ". ---\n";
     }
 
 }

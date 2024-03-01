@@ -2,7 +2,7 @@ package com.stefanodannunzio.games.rpg_cards_game.characters;
 
 import com.stefanodannunzio.games.rpg_cards_game.utils.BirthDate;
 
-public class Human extends BaseChar {
+public class Human extends Char {
 
     public Human(String name, String alias, BirthDate birthDate) {
         super(name, alias, birthDate);
